@@ -1,8 +1,337 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Applications CPD numérique 94</title></head>
-<body style="font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px">
-<h1>Applications de la mission numérique 94</h1>
-<p>Page de téléchargement en préparation : Visionneuse et Moulinette EvNat 094, pour Mac et Windows.</p>
-</body></html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Applications de la mission numérique 94</title>
+<meta name="description" content="Télécharger la Visionneuse et la Moulinette EvNat 094 pour Mac et Windows : installation, guides, nouveautés.">
+<link rel="icon" href="charte/logo-visionneuse.png">
+<script>
+  // Thème appliqué avant l'affichage : choix mémorisé, sinon celui du système.
+  try { const t = localStorage.getItem('cpdnum.theme'); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+</script>
+<style>
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Medium.woff2') format('woff2'); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Bold.woff2') format('woff2'); font-weight: 700 800; font-display: swap; }
+
+:root {
+  color-scheme: light;
+  --fond: #f6f6f6;
+  --carte: #ffffff;
+  --encre: #161616;
+  --encre-douce: #666666;
+  --bord: #dddddd;
+  --accent: #000091;
+  --accent-survol: #1212ff;
+  --sur-accent: #ffffff;
+  --accent-clair: #e3e3fd;
+  --rouge: #e1000f;
+  --ombre: 0 1px 2px rgba(0, 0, 0, .05), 0 8px 24px rgba(0, 0, 0, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="clair"]) {
+    color-scheme: dark;
+    --fond: #161616; --carte: #1e1e1e; --encre: #eeeeee; --encre-douce: #a8a8a8; --bord: #353535;
+    --accent: #8585f6; --accent-survol: #a1a1f8; --sur-accent: #000091; --accent-clair: #1d1d4a;
+    --ombre: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-theme="sombre"] {
+  color-scheme: dark;
+  --fond: #161616; --carte: #1e1e1e; --encre: #eeeeee; --encre-douce: #a8a8a8; --bord: #353535;
+  --accent: #8585f6; --accent-survol: #a1a1f8; --sur-accent: #000091; --accent-clair: #1d1d4a;
+  --ombre: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fond); color: var(--encre);
+  font: 16px/1.55 'Marianne', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); }
+.conteneur { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+/* En-tête */
+.entete { background: var(--carte); border-bottom: 1px solid var(--bord); box-shadow: inset 0 -3px 0 var(--accent); }
+.entete .conteneur { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 76px; }
+.marque { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.logo-mission { height: 48px; width: auto; background: #fff; border-radius: 6px; padding: 3px 5px; }
+.marque-texte { font-weight: 700; font-size: 17px; line-height: 1.25; }
+.marque-texte small { display: block; font-weight: 400; font-size: 13px; color: var(--encre-douce); }
+.interrupteur {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--bord); background: var(--fond); color: var(--encre);
+  border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.interrupteur:hover { border-color: var(--accent); }
+
+/* Bandeau */
+.bandeau { padding: 40px 0 8px; }
+.bandeau h1 { margin: 0 0 8px; font-size: clamp(26px, 4vw, 38px); line-height: 1.2; color: var(--accent); }
+.bandeau p { margin: 0; max-width: 760px; color: var(--encre-douce); font-size: 17px; }
+
+/* Cartes des applications */
+.applis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px; padding: 24px 0 8px; }
+.appli {
+  background: var(--carte); border: 1px solid var(--bord); border-radius: 14px; box-shadow: var(--ombre);
+  padding: 22px; display: flex; flex-direction: column; gap: 14px; min-width: 0;
+}
+.appli-tete { display: flex; align-items: center; gap: 14px; }
+.appli-tete img { width: 64px; height: 64px; border-radius: 15px; flex: 0 0 auto; }
+.appli h2 { margin: 0; font-size: 22px; line-height: 1.2; }
+.version { margin: 2px 0 0; font-size: 13px; color: var(--encre-douce); }
+.appli > p { margin: 0; }
+.boutons { display: flex; flex-wrap: wrap; gap: 10px; }
+.bouton {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  padding: 11px 16px; border-radius: 8px; font-weight: 600; font-size: 15px;
+  border: 1px solid var(--accent); color: var(--accent); background: transparent;
+}
+.bouton.principal { background: var(--accent); color: var(--sur-accent); }
+.bouton.principal:hover { background: var(--accent-survol); border-color: var(--accent-survol); }
+.bouton:not(.principal):hover { background: var(--accent-clair); }
+.bouton[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+.taille { font-weight: 400; font-size: 12.5px; opacity: .85; white-space: nowrap; }
+.liens-guide { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
+.nouveautes { background: var(--fond); border-radius: 10px; padding: 12px 14px; font-size: 14px; }
+.nouveautes strong { display: block; margin-bottom: 4px; }
+.nouveautes ul { margin: 0; padding-left: 18px; }
+.nouveautes a { font-size: 13px; }
+
+/* Galeries */
+.galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.galerie figure { margin: 0; background: var(--carte); border: 1px solid var(--bord); border-radius: 12px; overflow: hidden; box-shadow: var(--ombre); }
+.galerie a { display: block; }
+.galerie img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; }
+.galerie figcaption { padding: 10px 12px; font-size: 13.5px; color: var(--encre-douce); }
+.galerie .telephone img { aspect-ratio: 16 / 10; object-fit: contain; background: var(--fond); }
+
+section.bloc { padding: 34px 0 6px; }
+section.bloc > h2 { margin: 0 0 6px; font-size: 24px; color: var(--accent); }
+section.bloc > p.chapeau { margin: 0 0 18px; color: var(--encre-douce); }
+
+/* Installer */
+.etapes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+.etape { background: var(--carte); border: 1px solid var(--bord); border-radius: 12px; padding: 18px 20px; }
+.etape h3 { margin: 0 0 8px; font-size: 18px; }
+.etape ol { margin: 0; padding-left: 20px; }
+.etape li { margin-bottom: 6px; }
+.remarque { margin: 16px 0 0; padding: 12px 16px; border-left: 4px solid var(--accent); background: var(--carte); border-radius: 0 10px 10px 0; font-size: 14.5px; }
+kbd { font: inherit; font-size: .9em; padding: 1px 6px; border: 1px solid var(--bord); border-radius: 5px; background: var(--fond); }
+
+/* Pied */
+.pied { margin-top: 48px; padding: 26px 0 36px; border-top: 1px solid var(--bord); background: var(--carte); font-size: 14px; color: var(--encre-douce); }
+.pied .conteneur { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.pied img { height: 42px; width: auto; background: #fff; border-radius: 6px; padding: 3px 5px; }
+.pied p { margin: 0; }
+
+/* Agrandissement d'une capture */
+dialog.loupe { border: 0; padding: 0; background: transparent; max-width: min(96vw, 1500px); }
+dialog.loupe::backdrop { background: rgba(0, 0, 0, .75); }
+dialog.loupe img { max-height: 88vh; width: auto; border-radius: 10px; }
+dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
+
+@media (max-width: 560px) {
+  .logo-mission { height: 38px; }
+  .marque-texte small { display: none; }
+  .bouton { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="conteneur">
+    <div class="marque">
+      <img class="logo-mission" src="charte/logo-mission-numerique-94.jpg" alt="Mission numérique 94">
+      <div class="marque-texte">Applications de la mission numérique 94<small>Conseil pédagogique numérique — Choisy-le-Roi et Fresnes</small></div>
+    </div>
+    <button class="interrupteur" id="theme" type="button" aria-pressed="false">Mode sombre</button>
+  </div>
+</header>
+
+<main class="conteneur">
+  <section class="bandeau">
+    <h1>Télécharger les applications</h1>
+    <p>Deux outils pour les formations et le pilotage des circonscriptions du Val-de-Marne, pour Mac et Windows. Gratuits, sans compte à créer, et mis à jour automatiquement.</p>
+  </section>
+
+  <div class="applis">
+    <article class="appli" id="visionneuse" data-appli="visionneuse">
+      <div class="appli-tete">
+        <img src="charte/logo-visionneuse.png" alt="">
+        <div><h2>Visionneuse</h2><p class="version" data-champ="version">Version en cours de lecture…</p></div>
+      </div>
+      <p>Projetez votre diaporama et faites participer la salle depuis les téléphones : questionnaires, nuages de mots, diapositives à consulter. Les participants scannent un QR code ; leurs réponses restent anonymes.</p>
+      <div class="boutons">
+        <a class="bouton principal" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
+        <a class="bouton" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+      </div>
+      <div class="liens-guide">
+        <a href="guides/visionneuse.html">Lire le guide</a>
+        <a href="guides/visionneuse.pdf">Guide PDF</a>
+        <a href="#galerie-visionneuse">Voir les captures</a>
+      </div>
+      <div class="nouveautes" data-champ="notes" hidden></div>
+    </article>
+
+    <article class="appli" id="moulinette" data-appli="moulinette">
+      <div class="appli-tete">
+        <img src="charte/logo-moulinette.png" alt="">
+        <div><h2>Moulinette EvNat 094</h2><p class="version" data-champ="version">Version en cours de lecture…</p></div>
+      </div>
+      <p>Analysez les évaluations nationales CP → CM2 de votre circonscription directement à partir de l'export REPERE : écoles, graphiques, suivi de cohorte et dossier PDF prêt à imprimer, sans classeur Excel. Tout reste sur votre ordinateur.</p>
+      <div class="boutons">
+        <a class="bouton principal" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
+        <a class="bouton" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+      </div>
+      <div class="liens-guide">
+        <a href="guides/moulinette.html">Lire le guide</a>
+        <a href="guides/moulinette.pdf">Guide PDF</a>
+        <a href="#galerie-moulinette">Voir les captures</a>
+      </div>
+      <div class="nouveautes" data-champ="notes" hidden></div>
+    </article>
+  </div>
+
+  <section class="bloc" id="galerie-visionneuse">
+    <h2>La Visionneuse en images</h2>
+    <p class="chapeau">Cliquez sur une capture pour l'agrandir.</p>
+    <div class="galerie">
+      <figure><a href="images/visionneuse/ecran-general.jpg"><img loading="lazy" src="images/visionneuse/ecran-general.jpg" alt="L'écran de la Visionneuse"></a><figcaption>L'écran du présentateur : le plan, l'aperçu et vos commentaires, la vue présentateur.</figcaption></figure>
+      <figure><a href="images/visionneuse/sondage-en-cours.jpg"><img loading="lazy" src="images/visionneuse/sondage-en-cours.jpg" alt="Un sondage en cours"></a><figcaption>Un sondage en cours : les pourcentages en direct ne sont visibles que de vous.</figcaption></figure>
+      <figure class="telephone"><a href="images/visionneuse/telephone.jpg"><img loading="lazy" src="images/visionneuse/telephone.jpg" alt="La page des participants sur téléphone"></a><figcaption>Sur le téléphone des participants : on scanne le QR code et on rejoint la séance.</figcaption></figure>
+      <figure><a href="images/visionneuse/pause-ecran.jpg"><img loading="lazy" src="images/visionneuse/pause-ecran.jpg" alt="La pause"></a><figcaption>La pause : l'heure de reprise annoncée à la salle, le vrai décompte pour vous.</figcaption></figure>
+      <figure><a href="images/visionneuse/visite-guidee.jpg"><img loading="lazy" src="images/visionneuse/visite-guidee.jpg" alt="La visite guidée"></a><figcaption>La visite guidée présente chaque zone de l'écran au premier lancement.</figcaption></figure>
+      <figure><a href="images/visionneuse/ecran-sombre.jpg"><img loading="lazy" src="images/visionneuse/ecran-sombre.jpg" alt="Le mode sombre"></a><figcaption>Le mode sombre, pour les salles obscures.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="bloc" id="galerie-moulinette">
+    <h2>La Moulinette EvNat 094 en images</h2>
+    <p class="chapeau">De l'export REPERE au dossier PDF, en sept étapes.</p>
+    <div class="galerie">
+      <figure><a href="images/moulinette/importer-un.jpg"><img loading="lazy" src="images/moulinette/importer-un.jpg" alt="Import du fichier REPERE"></a><figcaption>Import du fichier REPERE : écoles reconnues, anomalies signalées.</figcaption></figure>
+      <figure><a href="images/moulinette/ecoles.jpg"><img loading="lazy" src="images/moulinette/ecoles.jpg" alt="Réglage des écoles"></a><figcaption>Les écoles : REP, réseaux, collèges et IPS renseignés.</figcaption></figure>
+      <figure><a href="images/moulinette/resultats-competences.jpg"><img loading="lazy" src="images/moulinette/resultats-competences.jpg" alt="Résultats par compétence"></a><figcaption>Par compétence : une école comparée à la circonscription.</figcaption></figure>
+      <figure><a href="images/moulinette/resultats-ensemble.jpg"><img loading="lazy" src="images/moulinette/resultats-ensemble.jpg" alt="Vue d'ensemble"></a><figcaption>Vue d'ensemble par niveau, moyennes pondérées.</figcaption></figure>
+      <figure><a href="images/moulinette/cohorte-vue.jpg"><img loading="lazy" src="images/moulinette/cohorte-vue.jpg" alt="Suivi de cohorte"></a><figcaption>Suivi de cohorte : l'an dernier et cette année, compétence par compétence.</figcaption></figure>
+      <figure><a href="images/moulinette/pdf-02.jpg"><img loading="lazy" src="images/moulinette/pdf-02.jpg" alt="Page du dossier PDF"></a><figcaption>Le dossier PDF : jamais un graphique coupé entre deux pages.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="bloc" id="installer">
+    <h2>Installer</h2>
+    <p class="chapeau">L'installation ne se fait qu'une fois : les mises à jour arrivent ensuite toutes seules, signées.</p>
+    <div class="etapes">
+      <div class="etape">
+        <h3>Sur Mac (puce Apple)</h3>
+        <ol>
+          <li>Ouvrez le fichier <code>.dmg</code> téléchargé.</li>
+          <li>Glissez l'application dans le dossier <strong>Applications</strong>.</li>
+          <li>Au premier lancement, faites <strong>clic droit → Ouvrir</strong>, puis confirmez : l'application n'est pas signée par Apple.</li>
+        </ol>
+      </div>
+      <div class="etape">
+        <h3>Sur Windows</h3>
+        <ol>
+          <li>Lancez le fichier <code>.exe</code> téléchargé.</li>
+          <li>Si l'écran bleu « Windows a protégé votre ordinateur » s'affiche, cliquez sur <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>.</li>
+          <li>L'installation se fait en un clic ; l'application s'ouvre.</li>
+        </ol>
+      </div>
+      <div class="etape">
+        <h3>Mises à jour</h3>
+        <ol>
+          <li>L'application vérifie elle-même, au démarrage puis régulièrement, si une nouvelle version existe.</li>
+          <li>Elle la télécharge et vous propose <strong>Installer et relancer</strong> ou <strong>Installer en quittant</strong>.</li>
+          <li>Chaque mise à jour est signée : rien d'autre ne peut s'installer.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="remarque">Vous avez encore la <strong>Visionneuse 1.1.9</strong> ou la <strong>Moulinette 0.0.1</strong> ? Ces versions n'ont pas la mise à jour automatique : installez une fois la version proposée ici par-dessus. Vos séances et vos projets sont conservés.</p>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <img src="charte/logo-mission-numerique-94.jpg" alt="Mission numérique 94">
+    <p>Mission numérique 94 — conseiller pédagogique numérique, circonscriptions de Choisy-le-Roi et de Fresnes.<br>
+      Les installateurs sont publiés sur <a href="https://github.com/maitrechalu/cpd-num-94/releases">GitHub</a>.</p>
+  </div>
+</footer>
+
+<dialog class="loupe" id="loupe"><img alt=""><p></p></dialog>
+
+<script>
+  // Thème : interrupteur (mémorisé sur cet appareil), sinon réglage du système.
+  const bouton = document.getElementById('theme');
+  const sombreActif = () => document.documentElement.dataset.theme === 'sombre'
+    || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  const majBouton = () => { const s = sombreActif(); bouton.textContent = s ? 'Mode clair' : 'Mode sombre'; bouton.setAttribute('aria-pressed', String(s)); };
+  bouton.addEventListener('click', () => {
+    const theme = sombreActif() ? 'clair' : 'sombre';
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem('cpdnum.theme', theme); } catch (_) {}
+    majBouton();
+  });
+  majBouton();
+
+  // Versions, liens et nouveautés lus dans les manifestes de mise à jour : la page
+  // reste juste après chaque publication, sans être republiée.
+  const mo = (octets) => octets ? `(${Math.round(octets / 1e6)} Mo)` : '';
+  const dateFr = (iso) => iso ? new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+  for (const carte of document.querySelectorAll('[data-appli]')) {
+    const id = carte.dataset.appli;
+    fetch(`maj/${id}.json`, { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
+      .then((manifeste) => {
+        const charge = JSON.parse(manifeste.charge);
+        carte.querySelector('[data-champ="version"]').textContent =
+          `Version ${charge.version}${charge.publieLe ? ` — publiée le ${dateFr(charge.publieLe)}` : ''}`;
+        for (const os of ['mac', 'windows']) {
+          const fichier = charge.telechargements?.[os];
+          const lien = carte.querySelector(`[data-lien="${os}"]`);
+          if (!fichier) continue;
+          lien.href = fichier.url;
+          lien.removeAttribute('aria-disabled');
+          carte.querySelector(`[data-taille="${os}"]`).textContent = mo(fichier.taille);
+        }
+        const zone = carte.querySelector('[data-champ="notes"]');
+        if (charge.notes?.length) {
+          zone.innerHTML = '<strong>Nouveautés</strong><ul></ul>';
+          const liste = zone.querySelector('ul');
+          charge.notes.forEach((note) => { const li = document.createElement('li'); li.textContent = note; liste.appendChild(li); });
+          const historique = document.createElement('a');
+          historique.href = `maj/${id}-historique.json`;
+          historique.textContent = 'Historique des versions';
+          zone.appendChild(historique);
+          zone.hidden = false;
+        }
+      })
+      .catch(() => {
+        carte.querySelector('[data-champ="version"]').textContent = 'Version indisponible pour le moment';
+        carte.querySelectorAll('[data-lien]').forEach((a) => {
+          a.href = 'https://github.com/maitrechalu/cpd-num-94/releases';
+          a.removeAttribute('aria-disabled');
+        });
+      });
+  }
+
+  // Captures : agrandissement sur place.
+  const loupe = document.getElementById('loupe');
+  document.querySelectorAll('.galerie a').forEach((a) => a.addEventListener('click', (e) => {
+    if (!loupe.showModal) return;
+    e.preventDefault();
+    loupe.querySelector('img').src = a.href;
+    loupe.querySelector('p').textContent = a.closest('figure').querySelector('figcaption').textContent;
+    loupe.showModal();
+  }));
+  loupe.addEventListener('click', () => loupe.close());
+</script>
+</body>
+</html>
