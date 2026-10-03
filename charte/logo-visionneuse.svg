@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Visionneuse — « une présentation, et un public qui participe ».
+       Bleu France, rouge Marianne, blanc : la charte de l'État, en aplats. -->
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1bb3"/>
+      <stop offset="1" stop-color="#000091"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#fond)"/>
+  <!-- L'écran de présentation, avec les résultats d'un sondage -->
+  <rect x="180" y="150" width="664" height="420" rx="44" fill="#ffffff"/>
+  <rect x="292" y="404" width="92" height="108" rx="18" fill="#c3c3f6"/>
+  <rect x="466" y="314" width="92" height="198" rx="18" fill="#6a6af4"/>
+  <rect x="640" y="226" width="92" height="286" rx="18" fill="#e1000f"/>
+  <!-- Le public : trois personnes bien séparées -->
+  <g fill="#ffffff" stroke="#05059a" stroke-width="18">
+    <circle cx="286" cy="716" r="64"/>
+    <path d="M176 912 a110 110 0 0 1 220 0 z"/>
+    <circle cx="738" cy="716" r="64"/>
+    <path d="M628 912 a110 110 0 0 1 220 0 z"/>
+    <circle cx="512" cy="700" r="70"/>
+    <path d="M396 912 a116 116 0 0 1 232 0 z"/>
+  </g>
+  <!-- Celle de droite lève la main : la participation, en rouge Marianne -->
+  <path d="M826 842 L866 652" stroke="#ffffff" stroke-width="40" stroke-linecap="round"/>
+  <circle cx="872" cy="616" r="40" fill="#e1000f" stroke="#ffffff" stroke-width="14"/>
+</svg>
