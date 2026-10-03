@@ -268,6 +268,10 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
 <dialog class="loupe" id="loupe"><img alt=""><p></p></dialog>
 
 <script>
+  // Versions, liens et nouveautés : toujours lus dans les manifestes signés du dépôt GitHub,
+  // que la page soit servie par GitHub Pages ou par mission-numerique-94.web.app (Firebase).
+  const BASE_MAJ = location.hostname.endsWith('github.io') ? 'maj/' : 'https://maitrechalu.github.io/cpd-num-94/maj/';
+
   // Thème : interrupteur (mémorisé sur cet appareil), sinon réglage du système.
   const bouton = document.getElementById('theme');
   const sombreActif = () => document.documentElement.dataset.theme === 'sombre'
@@ -287,7 +291,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
   const dateFr = (iso) => iso ? new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
   for (const carte of document.querySelectorAll('[data-appli]')) {
     const id = carte.dataset.appli;
-    fetch(`maj/${id}.json`, { cache: 'no-cache' })
+    fetch(`${BASE_MAJ}${id}.json`, { cache: 'no-cache' })
       .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
       .then((manifeste) => {
         const charge = JSON.parse(manifeste.charge);
@@ -307,7 +311,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
           const liste = zone.querySelector('ul');
           charge.notes.forEach((note) => { const li = document.createElement('li'); li.textContent = note; liste.appendChild(li); });
           const historique = document.createElement('a');
-          historique.href = `maj/${id}-historique.json`;
+          historique.href = `${BASE_MAJ}${id}-historique.json`;
           historique.textContent = 'Historique des versions';
           zone.appendChild(historique);
           zone.hidden = false;
