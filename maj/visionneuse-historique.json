@@ -1,0 +1,14 @@
+[
+  {
+    "version": "1.2.0",
+    "publieLe": "2026-10-03T17:26:02.837Z",
+    "notes": [
+      "Thème clair ou sombre, au choix (interrupteur en haut à droite)",
+      "Commentaires affichés avec leur mise en forme PowerPoint",
+      "Pause : à placer dans le plan ou à heure fixe, heures figées, réinitialisation",
+      "Sondages : Démarrer / Pause / Reprendre ; la barre d'espace n'ouvre plus le vote par erreur",
+      "Aperçu en grand de la diapositive suivante, avec son commentaire",
+      "Mises à jour automatiques et signées"
+    ]
+  }
+]
