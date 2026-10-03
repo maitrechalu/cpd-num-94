@@ -1,5 +1,16 @@
 [
   {
+    "version": "1.3.0",
+    "publieLe": "2026-10-03T17:51:30.883Z",
+    "notes": [
+      "Charte graphique de l'Éducation nationale : police Marianne, bleu France, logos de la mission numérique 94",
+      "Guide d'utilisation intégré (bouton ? ou F1) et visite guidée de l'écran",
+      "Page des participants aux couleurs de l'État, plus accueillante",
+      "Diapositives verrouillées par défaut à l'importation",
+      "Code d'accès vérifié par la base : impossible de voter sans le PIN"
+    ]
+  },
+  {
     "version": "1.2.0",
     "publieLe": "2026-10-03T17:26:02.837Z",
     "notes": [
