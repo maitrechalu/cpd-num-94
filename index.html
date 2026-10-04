@@ -59,7 +59,15 @@ a { color: var(--accent); }
 .entete { background: var(--carte); border-bottom: 1px solid var(--bord); box-shadow: inset 0 -3px 0 var(--accent); }
 .entete .conteneur { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 76px; }
 .marque { display: flex; align-items: center; gap: 14px; min-width: 0; }
-.logo-mission { height: 48px; width: auto; background: #fff; border-radius: 6px; padding: 3px 5px; }
+.logo-mission { height: 48px; width: auto; }
+/* Logo de la mission : lettres foncées en clair, lettres claires (fond transparent) en sombre. */
+.logo-mission-sombre { display: none; }
+:root[data-theme="sombre"] .logo-mission-clair { display: none; }
+:root[data-theme="sombre"] .logo-mission-sombre { display: inline-block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="clair"]) .logo-mission-clair { display: none; }
+  :root:not([data-theme="clair"]) .logo-mission-sombre { display: inline-block; }
+}
 .marque-texte { font-weight: 700; font-size: 17px; line-height: 1.25; }
 .marque-texte small { display: block; font-weight: 400; font-size: 13px; color: var(--encre-douce); }
 .interrupteur {
@@ -126,7 +134,7 @@ kbd { font: inherit; font-size: .9em; padding: 1px 6px; border: 1px solid var(--
 /* Pied */
 .pied { margin-top: 48px; padding: 26px 0 36px; border-top: 1px solid var(--bord); background: var(--carte); font-size: 14px; color: var(--encre-douce); }
 .pied .conteneur { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
-.pied img { height: 42px; width: auto; background: #fff; border-radius: 6px; padding: 3px 5px; }
+.pied img { height: 42px; width: auto; }
 .pied p { margin: 0; }
 
 /* Agrandissement d'une capture */
@@ -147,7 +155,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
 <header class="entete">
   <div class="conteneur">
     <div class="marque">
-      <img class="logo-mission" src="charte/logo-mission-numerique-94.jpg" alt="Mission numérique 94">
+      <img class="logo-mission logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-mission logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
       <div class="marque-texte">Applications de la mission numérique 94</div>
     </div>
     <button class="interrupteur" id="theme" type="button" aria-pressed="false">Mode sombre</button>
@@ -164,7 +172,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
     <article class="appli" id="visionneuse" data-appli="visionneuse">
       <div class="appli-tete">
         <img src="charte/logo-visionneuse.png" alt="">
-        <div><h2>Visionneuse</h2><p class="version" data-champ="version">Version en cours de lecture…</p></div>
+        <div><h2>Visionneuse 094</h2><p class="version" data-champ="version">Version en cours de lecture…</p></div>
       </div>
       <p>Projetez votre diaporama et faites participer la salle depuis les téléphones : questionnaires, nuages de mots, diapositives à consulter. Les participants scannent un QR code ; leurs réponses restent anonymes.</p>
       <div class="boutons">
@@ -259,7 +267,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
 
 <footer class="pied">
   <div class="conteneur">
-    <img src="charte/logo-mission-numerique-94.jpg" alt="Mission numérique 94">
+    <img class="logo-pied logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-pied logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
     <p>Mission numérique 94.<br>
       Les installateurs sont publiés sur <a href="https://github.com/maitrechalu/cpd-num-94/releases">GitHub</a>.</p>
   </div>
