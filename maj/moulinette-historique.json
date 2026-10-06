@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.1.0",
+    "publieLe": "2026-10-06T13:59:52.207Z",
+    "notes": [
+      "Export REPERE 2026 reconnu (nouveaux noms d'onglets CPF, CPM…), chiffres vérifiés avec ORACE",
+      "Statut REP / hors REP et IPS pré-remplis depuis l'annuaire officiel des écoles du Val-de-Marne",
+      "Projet « Département » : plusieurs circonscriptions, import en vrac, comparaison des circonscriptions entre elles et au département",
+      "Tableau de chaleur (écoles ou circonscriptions × compétences), années toujours nommées en clair"
+    ]
+  },
+  {
     "version": "0.0.3",
     "publieLe": "2026-10-03T19:31:44.206Z",
     "notes": [
