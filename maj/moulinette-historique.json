@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.3.7",
+    "publieLe": "2026-10-06T18:08:07.734Z",
+    "notes": [
+      "Exporter : la section « Export pour poser des questions à l’IA » passe en tête de l’écran ; captures du guide refaites."
+    ]
+  },
+  {
     "version": "0.3.6",
     "publieLe": "2026-10-06T17:28:40.991Z",
     "notes": [
