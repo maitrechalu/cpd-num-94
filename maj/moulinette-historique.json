@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.2.0",
+    "publieLe": "2026-10-06T14:47:20.579Z",
+    "notes": [
+      "Radars et camemberts par compétence (vues et PDF)",
+      "Impression : plusieurs sujets, référence au choix, représentations à la carte, un PDF par sujet",
+      "Apparence des graphiques (palettes, couleurs, symboles) ; pointillés de seuil retirés",
+      "Annuaire des écoles vérifié au démarrage, origine et date des données affichées",
+      "Assistant intégré, local, qui lit l'écran affiché"
+    ]
+  },
+  {
     "version": "0.1.0",
     "publieLe": "2026-10-06T13:59:52.207Z",
     "notes": [
