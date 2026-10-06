@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.3.8",
+    "publieLe": "2026-10-06T18:13:32.505Z",
+    "notes": [
+      "Guide relu face à l’application : renvois de parties, vue Circonscriptions, connexions réseau et RGPD, écran Exporter, FAQ."
+    ]
+  },
+  {
     "version": "0.3.7",
     "publieLe": "2026-10-06T18:08:07.734Z",
     "notes": [
