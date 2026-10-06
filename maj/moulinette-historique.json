@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.3.4",
+    "publieLe": "2026-10-06T16:48:58.877Z",
+    "notes": [
+      "Aide : passe la main à un assistant d’IA avec le CSV complet quand elle ne sait pas, plus de mise en veille, liens Régénérer / Contexte général ; l’aperçu d’impression défile jusqu’à l’aperçu."
+    ]
+  },
+  {
     "version": "0.3.3",
     "publieLe": "2026-10-06T16:38:18.570Z",
     "notes": [
