@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.3",
+    "publieLe": "2026-10-07T13:15:45.939Z",
+    "notes": [
+      "Tableaux : la double ligne entre les cases blanches est corrigée."
+    ]
+  },
+  {
     "version": "0.5.2",
     "publieLe": "2026-10-07T12:58:15.149Z",
     "notes": [
