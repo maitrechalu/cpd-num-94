@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.0",
+    "publieLe": "2026-10-07T08:08:21.762Z",
+    "notes": [
+      "Annuaire : rapport des changements après mise à jour (département et écoles du projet), valeurs issues de l’annuaire rafraîchies, annuaire du 07/10 embarqué. Cohorte : choix du périmètre si les REP, réseaux ou collèges ont changé entre les deux années ; réglages de l’année précédente dans Écoles. Guide : quand mettre à jour l’annuaire et ce que cela change."
+    ]
+  },
+  {
     "version": "0.3.10",
     "publieLe": "2026-10-07T07:50:04.145Z",
     "notes": [
