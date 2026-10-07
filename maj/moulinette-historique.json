@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.3.10",
+    "publieLe": "2026-10-07T07:50:04.145Z",
+    "notes": [
+      "Correctif : « Enregistrer l’apparence actuelle » ne réagissait pas ; un champ de nom s’affiche désormais (écran Apparence et menu du clic droit)."
+    ]
+  },
+  {
     "version": "0.3.9",
     "publieLe": "2026-10-07T07:43:22.413Z",
     "notes": [
