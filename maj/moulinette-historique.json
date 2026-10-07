@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.3.9",
+    "publieLe": "2026-10-07T07:43:22.413Z",
+    "notes": [
+      "Clic droit sur un graphique ou un tableau : menu d’apparence contextualisé (couleurs, tracés, symboles, palettes, apparences enregistrées). Nuanciers de l’écran Apparence corrigés. Captures du guide et pages PDF refaites."
+    ]
+  },
+  {
     "version": "0.3.8",
     "publieLe": "2026-10-06T18:13:32.505Z",
     "notes": [
