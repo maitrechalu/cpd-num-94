@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.7",
+    "publieLe": "2026-10-07T10:01:42.042Z",
+    "notes": [
+      "Symboles de seuil cohérents dans chaque préréglage : noir pour « à besoins », rouge de la palette pour « à besoins + fragiles » (DSFR : rouge Marianne, les fragiles en orange terre battue)."
+    ]
+  },
+  {
     "version": "0.4.6",
     "publieLe": "2026-10-07T09:54:02.704Z",
     "notes": [
