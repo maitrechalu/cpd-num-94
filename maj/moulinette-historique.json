@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.0",
+    "publieLe": "2026-10-07T11:24:40.316Z",
+    "notes": [
+      "Préréglages harmonisés : chaque préréglage règle aussi les couleurs des tableaux (DSFR = jetons officiels succès / erreur / tournesol, daltonisme = teintes Okabe-Ito, gris) ; les symboles de seuil portent un liseré contrasté pour rester lisibles sur toute barre. Numérotation : après 0.4.9 vient 0.5.0."
+    ]
+  },
+  {
     "version": "0.4.10",
     "publieLe": "2026-10-07T10:34:06.613Z",
     "notes": [
