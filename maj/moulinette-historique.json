@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.2",
+    "publieLe": "2026-10-07T12:58:15.149Z",
+    "notes": [
+      "Tableaux : lignes noires entre toutes les cases, infobulle explicative au survol de chaque cellule (effectifs, sens des couleurs, écarts). Infobulles des graphiques avec la forme propre à chaque série (carré pour les bâtons, rond pour les courbes, symbole choisi pour les seuils)."
+    ]
+  },
+  {
     "version": "0.5.1",
     "publieLe": "2026-10-07T12:42:29.931Z",
     "notes": [
