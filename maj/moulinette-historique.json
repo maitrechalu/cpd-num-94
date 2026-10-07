@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.1",
+    "publieLe": "2026-10-07T12:42:29.931Z",
+    "notes": [
+      "Infobulles et légendes avec la vraie forme des symboles ; bordures de toutes les cellules des tableaux ; ensembles (circonscription, REP, réseaux…) en tête des listes ; projet départemental : département au choix dans la liste officielle ou nom libre, circonscriptions d’un autre département lues dans l’annuaire."
+    ]
+  },
+  {
     "version": "0.5.0",
     "publieLe": "2026-10-07T11:24:40.316Z",
     "notes": [
