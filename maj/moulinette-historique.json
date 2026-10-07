@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.5",
+    "publieLe": "2026-10-07T09:34:15.198Z",
+    "notes": [
+      "Tableaux, à l’écran et dans les PDF : première colonne calée sur son texte, nombres jamais coupés, titres de colonnes centrés et coupés aux mots."
+    ]
+  },
+  {
     "version": "0.4.4",
     "publieLe": "2026-10-07T09:19:46.138Z",
     "notes": [
