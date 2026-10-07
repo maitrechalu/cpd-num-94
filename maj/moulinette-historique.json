@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.2",
+    "publieLe": "2026-10-07T08:34:49.299Z",
+    "notes": [
+      "Apparence : encadré « les couleurs se changent d’un clic droit » et camembert témoin. Imprimer : liens toutes / aucune / par défaut pour les représentations."
+    ]
+  },
+  {
     "version": "0.4.1",
     "publieLe": "2026-10-07T08:27:25.075Z",
     "notes": [
