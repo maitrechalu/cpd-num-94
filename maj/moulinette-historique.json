@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.9",
+    "publieLe": "2026-10-07T10:27:35.702Z",
+    "notes": [
+      "Menu du clic droit : le bouton de retour au modèle remet la couleur, réaffiche l’élément s’il était masqué et, pour un symbole de seuil, sa forme et sa taille ; le menu et le nuancier restent entièrement visibles même en bas de la fenêtre."
+    ]
+  },
+  {
     "version": "0.4.8",
     "publieLe": "2026-10-07T10:08:33.533Z",
     "notes": [
