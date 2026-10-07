@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.1",
+    "publieLe": "2026-10-07T08:27:25.075Z",
+    "notes": [
+      "Apparence : les couleurs se changent par clic droit sur l’élément (barre, symbole, point, cellule), avec une case pour le masquer ; l’écran Apparence garde palettes, apparences enregistrées, témoins et tracés."
+    ]
+  },
+  {
     "version": "0.4.0",
     "publieLe": "2026-10-07T08:08:21.762Z",
     "notes": [
