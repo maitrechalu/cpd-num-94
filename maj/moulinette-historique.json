@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.8",
+    "publieLe": "2026-10-07T10:08:33.533Z",
+    "notes": [
+      "Écran Écoles : la flèche des listes déroulantes ne chevauche plus le texte."
+    ]
+  },
+  {
     "version": "0.4.7",
     "publieLe": "2026-10-07T10:01:42.042Z",
     "notes": [
