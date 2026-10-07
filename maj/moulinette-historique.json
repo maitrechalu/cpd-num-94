@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.10",
+    "publieLe": "2026-10-07T10:34:06.613Z",
+    "notes": [
+      "Apparence : un « null » parasite s’affichait sous « Mes apparences » ; corrigé."
+    ]
+  },
+  {
     "version": "0.4.9",
     "publieLe": "2026-10-07T10:27:35.702Z",
     "notes": [
