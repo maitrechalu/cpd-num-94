@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.4",
+    "publieLe": "2026-10-07T13:24:29.010Z",
+    "notes": [
+      "Tableaux : une seule ligne simple noire partout, plus aucun filet gras ni double ligne."
+    ]
+  },
+  {
     "version": "0.5.3",
     "publieLe": "2026-10-07T13:15:45.939Z",
     "notes": [
