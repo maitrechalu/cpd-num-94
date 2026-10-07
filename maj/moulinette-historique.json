@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.4.3",
+    "publieLe": "2026-10-07T09:01:45.202Z",
+    "notes": [
+      "PDF : graphiques parfois vides corrigés. Apparence : clic droit réservé aux témoins (légendes comprises), témoins évolution et IPS, plus de pointillés. Résultats : tous les onglets visibles, « Aucune référence » possible. Imprimer : roue pendant l’aperçu, aperçu dans sa zone de défilement. Alignements Importer et Exporter, en-têtes de tableaux sur deux lignes."
+    ]
+  },
+  {
     "version": "0.4.2",
     "publieLe": "2026-10-07T08:34:49.299Z",
     "notes": [
