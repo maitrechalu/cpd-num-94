@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.6",
+    "publieLe": "2026-10-08T10:35:59.081Z",
+    "notes": [
+      "Version Linux (AppImage x64) : téléchargement sur le site, mise à jour automatique sur place. Guide : rubrique d’installation Linux."
+    ]
+  },
+  {
     "version": "0.5.5",
     "publieLe": "2026-10-07T13:37:59.367Z",
     "notes": [
