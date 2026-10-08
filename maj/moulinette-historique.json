@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.8",
+    "publieLe": "2026-10-08T13:21:47.416Z",
+    "notes": [
+      "Comparer un niveau à l’année précédente (CP 2026 face à CP 2025…) dans toutes les vues et à l’impression. Tableaux imprimés jamais tronqués : renvois numérotés vers des notes, suite sur la page suivante avec les titres repris."
+    ]
+  },
+  {
     "version": "0.5.7",
     "publieLe": "2026-10-08T12:52:52.943Z",
     "notes": [
