@@ -196,6 +196,8 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
       <div class="boutons">
         <a class="bouton principal" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
         <a class="bouton" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton" data-lien="macIntel" aria-disabled="true" href="#">Télécharger pour Mac (Intel) <span class="taille" data-taille="macIntel"></span></a>
+        <a class="bouton" data-lien="linux" aria-disabled="true" href="#">Télécharger pour Linux (AppImage) <span class="taille" data-taille="linux"></span></a>
       </div>
       <div class="liens-guide">
         <a href="guides/moulinette.html">Lire le guide</a>
@@ -242,6 +244,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
           <li>Ouvrez le fichier <code>.dmg</code> téléchargé.</li>
           <li>Glissez l'application dans le dossier <strong>Applications</strong>.</li>
           <li>Au premier lancement, faites <strong>clic droit → Ouvrir</strong>, puis confirmez : l'application n'est pas signée par Apple.</li>
+          <li>Si macOS répond « endommagé » ou « non compatible », ouvrez le Terminal et tapez : <code>xattr -dr com.apple.quarantine "/Applications/Moulinette EvNat 094.app"</code>, puis relancez. Mac Intel : prenez le fichier « Mac (Intel) ». macOS 11 (Big Sur) ou plus récent.</li>
         </ol>
       </div>
       <div class="etape">
@@ -250,6 +253,14 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
           <li>Lancez le fichier <code>.exe</code> téléchargé.</li>
           <li>Si l'écran bleu « Windows a protégé votre ordinateur » s'affiche, cliquez sur <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>.</li>
           <li>L'installation se fait en un clic ; l'application s'ouvre.</li>
+        </ol>
+      </div>
+      <div class="etape">
+        <h3>Sur Linux (Moulinette)</h3>
+        <ol>
+          <li>Téléchargez le fichier <code>.AppImage</code> et rendez-le exécutable : clic droit → Propriétés → « Autoriser l'exécution », ou <code>chmod +x</code>.</li>
+          <li>Double-cliquez dessus : aucune installation, l'application s'ouvre.</li>
+          <li>Gardez le fichier là où vous l'avez rangé : les mises à jour le remplacent sur place.</li>
         </ol>
       </div>
       <div class="etape">
@@ -305,10 +316,10 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
         const charge = JSON.parse(manifeste.charge);
         carte.querySelector('[data-champ="version"]').textContent =
           `Version ${charge.version}${charge.publieLe ? ` — publiée le ${dateFr(charge.publieLe)}` : ''}`;
-        for (const os of ['mac', 'windows']) {
+        for (const os of ['mac', 'windows', 'linux', 'macIntel']) {
           const fichier = charge.telechargements?.[os];
           const lien = carte.querySelector(`[data-lien="${os}"]`);
-          if (!fichier) continue;
+          if (!fichier || !lien) continue;
           lien.href = fichier.url;
           lien.removeAttribute('aria-disabled');
           carte.querySelector(`[data-taille="${os}"]`).textContent = mo(fichier.taille);
