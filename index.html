@@ -176,8 +176,8 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
       </div>
       <p>Projetez votre diaporama et faites participer la salle depuis les téléphones : questionnaires, nuages de mots, diapositives à consulter. Les participants scannent un QR code ; leurs réponses restent anonymes.</p>
       <div class="boutons">
-        <a class="bouton principal" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
-        <a class="bouton" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton principal" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
       </div>
       <div class="liens-guide">
         <a href="guides/visionneuse.html">Lire le guide</a>
@@ -194,8 +194,8 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
       </div>
       <p>Analysez les évaluations nationales CP → CM2 de votre circonscription directement à partir de l'export REPERE : écoles, graphiques, suivi de cohorte et dossier PDF prêt à imprimer, sans classeur Excel. Tout reste sur votre ordinateur.</p>
       <div class="boutons">
-        <a class="bouton principal" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
-        <a class="bouton" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton principal" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
         <a class="bouton" data-lien="macIntel" aria-disabled="true" href="#">Télécharger pour Mac (Intel) <span class="taille" data-taille="macIntel"></span></a>
         <a class="bouton" data-lien="linux" aria-disabled="true" href="#">Télécharger pour Linux (AppImage) <span class="taille" data-taille="linux"></span></a>
       </div>
@@ -239,20 +239,20 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
     <p class="chapeau">L'installation ne se fait qu'une fois : les mises à jour arrivent ensuite toutes seules, signées.</p>
     <div class="etapes">
       <div class="etape">
-        <h3>Sur Mac (puce Apple)</h3>
-        <ol>
-          <li>Ouvrez le fichier <code>.dmg</code> téléchargé.</li>
-          <li>Glissez l'application dans le dossier <strong>Applications</strong>.</li>
-          <li>Au premier lancement, faites <strong>clic droit → Ouvrir</strong>, puis confirmez : l'application n'est pas signée par Apple.</li>
-          <li>Si macOS répond « endommagé » ou « non compatible », ouvrez le Terminal et tapez : <code>xattr -dr com.apple.quarantine "/Applications/Moulinette EvNat 094.app"</code>, puis relancez. Mac Intel : prenez le fichier « Mac (Intel) ». macOS 11 (Big Sur) ou plus récent.</li>
-        </ol>
-      </div>
-      <div class="etape">
         <h3>Sur Windows</h3>
         <ol>
           <li>Lancez le fichier <code>.exe</code> téléchargé.</li>
           <li>Si l'écran bleu « Windows a protégé votre ordinateur » s'affiche, cliquez sur <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>.</li>
           <li>L'installation se fait en un clic ; l'application s'ouvre.</li>
+        </ol>
+      </div>
+      <div class="etape">
+        <h3>Sur Mac (puce Apple ou Intel)</h3>
+        <ol>
+          <li>Ouvrez le fichier <code>.dmg</code> téléchargé.</li>
+          <li>Glissez l'application dans le dossier <strong>Applications</strong>.</li>
+          <li>Au premier lancement, faites <strong>clic droit → Ouvrir</strong>, puis confirmez : l'application n'est pas signée par Apple.</li>
+          <li>Si macOS répond « endommagé » ou « non compatible », ouvrez le Terminal et tapez : <code>xattr -dr com.apple.quarantine "/Applications/Moulinette EvNat 094.app"</code>, puis relancez. Mac Intel : prenez le fichier « Mac (Intel) ». macOS 11 (Big Sur) ou plus récent.</li>
         </ol>
       </div>
       <div class="etape">
