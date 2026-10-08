@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.1",
+    "publieLe": "2026-10-08T15:43:48.686Z",
+    "notes": [
+      "Impression : les tableaux de cohorte en paysage ne sont plus coupés à droite (ajustement refait dans la mise en page réelle d’impression)."
+    ]
+  },
+  {
     "version": "0.6.0",
     "publieLe": "2026-10-08T15:23:35.182Z",
     "notes": [
