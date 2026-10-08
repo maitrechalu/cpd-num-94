@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.0",
+    "publieLe": "2026-10-08T15:23:35.182Z",
+    "notes": [
+      "Dans les listes, chaque entité affiche son année quand l’année précédente est proposée : « Jules Ferry (2026-2027) » face à « ↺ Jules Ferry (2025-2026) »."
+    ]
+  },
+  {
     "version": "0.5.9",
     "publieLe": "2026-10-08T14:59:24.514Z",
     "notes": [
