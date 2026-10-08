@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.5.9",
+    "publieLe": "2026-10-08T14:59:24.514Z",
+    "notes": [
+      "Enregistrement automatique et choix de l’emplacement dès la création ; appariement automatique avec l’année précédente ; nouveau tableau récapitulatif (écart des satisfaisants en jaune) avec légende ; bouton PDF sur chaque graphique et tableau ; lien « Vérifier les mises à jour » (application et annuaire), vérification toutes les 10 minutes."
+    ]
+  },
+  {
     "version": "0.5.8",
     "publieLe": "2026-10-08T13:21:47.416Z",
     "notes": [
