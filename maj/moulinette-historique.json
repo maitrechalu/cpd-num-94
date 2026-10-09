@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.5",
+    "publieLe": "2026-10-09T08:31:02.059Z",
+    "notes": [
+      "Tableau récapitulatif : légende entière à l’écran. Bouton PDF placé au-dessus des graphiques et tableaux, avec un aperçu dans une petite fenêtre à part."
+    ]
+  },
+  {
     "version": "0.6.4",
     "publieLe": "2026-10-09T08:13:38.447Z",
     "notes": [
