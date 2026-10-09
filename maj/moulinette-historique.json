@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.4",
+    "publieLe": "2026-10-09T08:13:38.447Z",
+    "notes": [
+      "Listes déroulantes : les entités de l’année précédente sont marquées [N-1], par exemple « [N-1] Jules Ferry (2025-2026) »."
+    ]
+  },
+  {
     "version": "0.6.3",
     "publieLe": "2026-10-09T08:02:29.261Z",
     "notes": [
