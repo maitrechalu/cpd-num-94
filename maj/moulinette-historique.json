@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.2",
+    "publieLe": "2026-10-09T07:52:39.515Z",
+    "notes": [
+      "Comparaison avec l’année précédente : l’année est affichée partout, dans les légendes, titres et tableaux (par exemple « Moyenne REP (2026-2027) »)."
+    ]
+  },
+  {
     "version": "0.6.1",
     "publieLe": "2026-10-08T15:43:48.686Z",
     "notes": [
