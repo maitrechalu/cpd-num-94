@@ -1,5 +1,12 @@
 [
   {
+    "version": "0.6.7",
+    "publieLe": "2026-10-09T14:32:27.046Z",
+    "notes": [
+      "Nouveau bouton « Toute la vue en PDF » en haut à droite : tous les graphiques et tableaux de la vue en un seul PDF, 1, 2 ou 4 graphiques par page."
+    ]
+  },
+  {
     "version": "0.6.6",
     "publieLe": "2026-10-09T13:56:38.817Z",
     "notes": [
