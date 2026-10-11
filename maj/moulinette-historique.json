@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.7.1",
+    "publieLe": "2026-10-11T11:42:30.773Z",
+    "notes": [
+      "Années antérieures jusqu'à N-4 : filtre d'années au-dessus des listes, « la même entité, année par année », parcours de cohorte CP → CM2 et matrice des compétences appariées",
+      "Imprimer : vignettes des représentations, orientation conseillée, tableaux trop larges coupés en parties, lien vers l'export pour l'IA (dix questions proposées)",
+      "Nouveaux écrans Statistiques (sens de lecture réussite ou difficulté) et Dispositif dédoublé (classes dédoublées de CP et CE1, co-intervention, grande section)",
+      "Écoles : collèges et réseaux pré-remplis d'après l'annuaire officiel (collège le plus proche), listes déroulantes toujours visibles, bandeau et menu fixes",
+      "Nouvelle présentation neutre de l'interface ; correcteur orthographique en ligne désactivé (RGPD) ; licence GPL v3"
+    ]
+  },
+  {
     "version": "0.6.7",
     "publieLe": "2026-10-09T14:32:27.046Z",
     "notes": [
