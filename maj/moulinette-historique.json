@@ -1,5 +1,13 @@
 [
   {
+    "version": "0.7.2",
+    "publieLe": "2026-10-11T12:25:29.669Z",
+    "notes": [
+      "Dispositif dédoublé : deux regroupements de plus dans Résultats, Cohorte et Imprimer, « Classes dédoublées en co-intervention » et « en salle séparée » (CP, CE1), dès qu'une modalité est renseignée",
+      "Guide et Aide mis à jour en conséquence"
+    ]
+  },
+  {
     "version": "0.7.1",
     "publieLe": "2026-10-11T11:42:30.773Z",
     "notes": [
