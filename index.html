@@ -165,7 +165,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
 <main class="conteneur">
   <section class="bandeau">
     <h1>Télécharger la Moulinette EvNat 094</h1>
-    <p>Un outil pour le pilotage des circonscriptions du Val-de-Marne, pour Mac, Windows et Linux. Gratuit, sans compte à créer, et mis à jour automatiquement.</p>
+    <p>Un outil pour le pilotage des circonscriptions du Val-de-Marne, pour Mac, Windows et Linux. Gratuit, libre, sans compte à créer, et mis à jour automatiquement.</p>
   </section>
 
   <div class="applis">
@@ -249,16 +249,23 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
   <div class="conteneur">
     <img class="logo-pied logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-pied logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
     <p>Mission numérique 94.<br>
-      Les installateurs sont publiés sur <a href="https://github.com/maitrechalu/cpd-num-94/releases">GitHub</a>.</p>
+      Application libre (licence GPL v3). Vos fichiers et vos projets restent sur votre ordinateur : la partie 8 du guide détaille les données personnelles.</p>
   </div>
 </footer>
 
 <dialog class="loupe" id="loupe"><img alt=""><p></p></dialog>
 
 <script>
-  // Versions, liens et nouveautés : toujours lus dans les manifestes signés du dépôt GitHub,
-  // que la page soit servie par GitHub Pages ou par mission-numerique-94.web.app (Firebase).
+  // Versions, liens et nouveautés : lus dans les manifestes signés. Servie par la Forge (ou en
+  // local), la page lit maj/ à côté d'elle ; servie ailleurs (miroir GitHub Pages, ancienne adresse
+  // Firebase), elle lit ceux de la Forge et, en secours, ceux du miroir GitHub.
+  const FORGE = 'https://mission-numerique-94.forge.apps.education.fr';
+  // Forge en pause (11/10/2026) : manifestes lus sur GitHub Pages ; la Forge ne sert plus que de secours si elle existe un jour.
   const BASE_MAJ = location.hostname.endsWith('github.io') ? 'maj/' : 'https://maitrechalu.github.io/cpd-num-94/maj/';
+  const BASE_MAJ_SECOURS = `${FORGE}/maj/`;
+  const lireManifeste = (nom) => fetch(`${BASE_MAJ}${nom}`, { cache: 'no-cache' })
+    .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
+    .catch(() => fetch(`${BASE_MAJ_SECOURS}${nom}`, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(); return r.json(); }));
 
   // Thème : interrupteur (mémorisé sur cet appareil), sinon réglage du système.
   const bouton = document.getElementById('theme');
@@ -279,8 +286,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
   const dateFr = (iso) => iso ? new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
   for (const carte of document.querySelectorAll('[data-appli]')) {
     const id = carte.dataset.appli;
-    fetch(`${BASE_MAJ}${id}.json`, { cache: 'no-cache' })
-      .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
+    lireManifeste(`${id}.json`)
       .then((manifeste) => {
         const charge = JSON.parse(manifeste.charge);
         carte.querySelector('[data-champ="version"]').textContent =
