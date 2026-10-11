@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions légales — Applications de la mission numérique 94</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="charte/logo-visionneuse.png">
+<script>
+  // Thème appliqué avant l'affichage : choix mémorisé, sinon celui du système.
+  try { const t = localStorage.getItem('cpdnum.theme'); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+</script>
+<style>
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Medium.woff2') format('woff2'); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: 'Marianne'; src: url('charte/polices/Marianne-Bold.woff2') format('woff2'); font-weight: 700 800; font-display: swap; }
+:root {
+  color-scheme: light;
+  --fond: #f6f6f6;
+  --carte: #ffffff;
+  --encre: #161616;
+  --encre-douce: #666666;
+  --bord: #dddddd;
+  --accent: #000091;
+  --accent-survol: #1212ff;
+  --sur-accent: #ffffff;
+  --accent-clair: #e3e3fd;
+  --rouge: #e1000f;
+  --ombre: 0 1px 2px rgba(0, 0, 0, .05), 0 8px 24px rgba(0, 0, 0, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="clair"]) {
+    color-scheme: dark;
+    --fond: #161616; --carte: #1e1e1e; --encre: #eeeeee; --encre-douce: #a8a8a8; --bord: #353535;
+    --accent: #8585f6; --accent-survol: #a1a1f8; --sur-accent: #000091; --accent-clair: #1d1d4a;
+    --ombre: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-theme="sombre"] {
+  color-scheme: dark;
+  --fond: #161616; --carte: #1e1e1e; --encre: #eeeeee; --encre-douce: #a8a8a8; --bord: #353535;
+  --accent: #8585f6; --accent-survol: #a1a1f8; --sur-accent: #000091; --accent-clair: #1d1d4a;
+  --ombre: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fond); color: var(--encre);
+  font: 16px/1.55 'Marianne', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  overflow-x: hidden;
+}
+a { color: var(--accent); }
+.conteneur { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+.entete .conteneur { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 76px; }
+.marque { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.logo-mission { height: 48px; width: auto; }
+:root[data-theme="sombre"] .logo-mission-clair { display: none; }
+:root[data-theme="sombre"] .logo-mission-sombre { display: inline-block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="clair"]) .logo-mission-clair { display: none; }
+  :root:not([data-theme="clair"]) .logo-mission-sombre { display: inline-block; }
+}
+.marque-texte { font-weight: 700; font-size: 17px; line-height: 1.25; }
+.interrupteur {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--bord); background: var(--fond); color: var(--encre);
+  border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.remarque { margin: 16px 0 0; padding: 12px 16px; border-left: 4px solid var(--accent); background: var(--carte); border-radius: 0 10px 10px 0; font-size: 14.5px; }
+.pied .conteneur { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.pied img { height: 42px; width: auto; }
+.pied p { margin: 0; }
+@media (max-width: 560px) {
+  .logo-mission { height: 38px; }
+  .marque-texte small { display: none; }
+  .bouton { width: 100%; justify-content: center; }
+}
+main.conteneur { padding-top: 28px; padding-bottom: 24px; max-width: 820px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 19px; margin: 32px 0 8px; color: var(--accent); }
+p, li { line-height: 1.55; }
+.a-completer { background: #fff3cd; color: #5c4400; padding: 0 4px; border-radius: 4px; }
+:root:not([data-theme="clair"]) .a-completer { background: #4a3a00; color: #ffe08a; }
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="conteneur">
+    <div class="marque">
+      <img class="logo-mission logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-mission logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
+      <div class="marque-texte">Applications de la mission numérique 94</div>
+    </div>
+    <a class="interrupteur" href="./">← Retour aux applications</a>
+  </div>
+</header>
+
+<main class="conteneur">
+  <h1>Mentions légales et données personnelles</h1>
+  <p>Ce site présente et distribue la Moulinette EvNat 094, application de la mission numérique du Val-de-Marne. D'autres applications pourront s'y ajouter.</p>
+
+  <h2>Éditeur</h2>
+  <!-- Variante A, institutionnelle, à activer SEULEMENT après accord écrit de l'IA-DASEN (voir VISIONNEUSE_A_FAIRE.md § Mentions légales) :
+  <p>Mission numérique 94 — Direction des services départementaux de l'éducation nationale du Val-de-Marne (DSDEN 94), académie de Créteil.<br>
+  Adresse postale et contact : [à compléter].<br>
+  Directeur de la publication : [IA-DASEN du Val-de-Marne, à compléter].</p>
+  -->
+  <p>Ce site est édité par Yannick Chalu, conseiller pédagogique départemental au numérique (DSDEN du Val-de-Marne, académie de Créteil), dans le cadre de ses missions. Il n'est pas un site officiel de la DSDEN ni de l'académie.<br>
+  Contact : <span class="a-completer">adresse électronique académique à compléter</span>.</p>
+
+  <h2>Hébergement</h2>
+  <p>Le site, les guides et les mises à jour des applications sont hébergés sur la <a href="https://forge.apps.education.fr/">Forge des communs numériques éducatifs</a>, service du ministère de l'Éducation nationale (Direction du numérique pour l'éducation), hébergé en France. Ses <a href="https://projet.apps.education.fr/mentions-legales/#forge">mentions légales</a> et sa <a href="https://projet.apps.education.fr/donnees-personnelles/#forge">politique de données personnelles</a> s'appliquent à l'hébergement.</p>
+  <p>Période de transition : les versions des applications installées avant octobre 2026 vérifient leurs mises à jour sur une copie du fichier de versions publiée sur GitHub Pages (GitHub Inc., États-Unis, certifié au cadre de protection des données UE–États-Unis). L'ancienne adresse <code>mission-numerique-94.web.app</code> (Firebase Hosting, Google) ne fait plus que renvoyer vers ce site. Ces deux services voient l'adresse IP du poste qui les consulte, et rien d'autre. Ils seront fermés à la fin de la transition.</p>
+
+  <h2>Données personnelles</h2>
+  <ul>
+    <li>Ce site ne dépose aucun cookie, n'utilise aucun traceur ni aucune mesure d'audience, et ne demande aucun compte. Le choix du mode clair ou sombre est gardé dans votre navigateur seulement.</li>
+    <li>L'application ne collecte rien et ne transmet aucune donnée : les fichiers d'évaluations sont traités sur votre ordinateur. Ses seules connexions servent à vérifier les mises à jour et la date de l'annuaire officiel des écoles (data.education.gouv.fr). Le guide détaille ces connexions dans sa section « Données personnelles ».</li>
+    <li>Comme pour tout site, l'hébergeur tient des journaux techniques d'accès (adresse IP, date, page demandée), conservés le temps prévu par sa propre politique.</li>
+    <li>Pour exercer vos droits (accès, rectification, opposition) ou pour toute question : <span class="a-completer">adresse du délégué à la protection des données de l'académie de Créteil à vérifier</span>, ou la <a href="https://www.cnil.fr/">CNIL</a>.</li>
+  </ul>
+
+  <h2>Licence</h2>
+  <p>La Moulinette EvNat 094 est un logiciel libre publié sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.fr.html">GNU GPL version 3</a>. Son code source est sur la <a href="https://forge.apps.education.fr/mission-numerique-94">Forge des communs numériques éducatifs</a>. Les textes et captures de ce site sont sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a>. Les logos de la mission numérique 94 et la charte de l'État restent soumis à leurs règles propres.</p>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <img class="logo-pied logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-pied logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
+    <p>Mission numérique 94.</p>
+  </div>
+</footer>
+</body>
+</html>
