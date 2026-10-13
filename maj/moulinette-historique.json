@@ -1,5 +1,14 @@
 [
   {
+    "version": "0.7.3",
+    "publieLe": "2026-10-13T13:48:14.093Z",
+    "notes": [
+      "Graphiques à courbes : les valeurs affichées ne se recouvrent plus quand deux courbes sont proches (placement automatique au-dessus ou au-dessous de chaque point)",
+      "Résultats : plus de « null » parasite au-dessus de la liste Entité A dans un projet sans année antérieure",
+      "Annuaire REP / IPS du 13 octobre 2026"
+    ]
+  },
+  {
     "version": "0.7.2",
     "publieLe": "2026-10-11T12:25:29.669Z",
     "notes": [
