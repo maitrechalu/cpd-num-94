@@ -1,28 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- Visionneuse — « une présentation, et un public qui participe ».
-       Bleu France, rouge Marianne, blanc : la charte de l'État, en aplats. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="824" height="824" viewBox="100 100 824 824">
+  <!-- Icône Visionneuse, version Liquid Glass (iOS / macOS 27).
+       Même idée que l'icône d'origine : l'écran projeté avec les barres d'un sondage
+       (lavande, indigo, rouge Marianne) et la salle qui vote, un carton rouge levé —
+       en couches de verre translucides sur un fond indigo lumineux. -->
   <defs>
-    <linearGradient id="fond" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1b1bb3"/>
-      <stop offset="1" stop-color="#000091"/>
+    <linearGradient id="fond" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#5a5cff"/>
+      <stop offset="0.5" stop-color="#2a24d6"/>
+      <stop offset="1" stop-color="#0f0b8f"/>
     </linearGradient>
+    <radialGradient id="lueur" cx="0.3" cy="0.08" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bordFond" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="0.35" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.3"/>
+    </linearGradient>
+    <clipPath id="carre"><rect x="100" y="100" width="824" height="824" rx="186"/></clipPath>
+    <linearGradient id="verre" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.93"/>
+      <stop offset="0.6" stop-color="#f1f1ff" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#e6e6ff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="verrePublic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="lisere" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="reflet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e0ff"/><stop offset="1" stop-color="#a9a6f5"/></linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f8cff"/><stop offset="1" stop-color="#4e4ae6"/></linearGradient>
+    <linearGradient id="b3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a63"/><stop offset="1" stop-color="#c8000f"/></linearGradient>
+    <radialGradient id="pastille" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#ff7078"/><stop offset="1" stop-color="#c4000e"/></radialGradient>
+    <filter id="ombreIcone" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="10" stdDeviation="11" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="ombre" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#08055c" flood-opacity="0.45"/></filter>
+    <filter id="ombreDouce" x="-40%" y="-40%" width="180%" height="190%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#08055c" flood-opacity="0.35"/></filter>
+    <filter id="flou" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="28"/></filter>
   </defs>
-  <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#fond)"/>
-  <!-- L'écran de présentation, avec les résultats d'un sondage -->
-  <rect x="180" y="150" width="664" height="420" rx="44" fill="#ffffff"/>
-  <rect x="292" y="404" width="92" height="108" rx="18" fill="#c3c3f6"/>
-  <rect x="466" y="314" width="92" height="198" rx="18" fill="#6a6af4"/>
-  <rect x="640" y="226" width="92" height="286" rx="18" fill="#e1000f"/>
-  <!-- Le public : trois personnes bien séparées -->
-  <g fill="#ffffff" stroke="#05059a" stroke-width="18">
-    <circle cx="286" cy="716" r="64"/>
-    <path d="M176 912 a110 110 0 0 1 220 0 z"/>
-    <circle cx="738" cy="716" r="64"/>
-    <path d="M628 912 a110 110 0 0 1 220 0 z"/>
-    <circle cx="512" cy="700" r="70"/>
-    <path d="M396 912 a116 116 0 0 1 232 0 z"/>
+
+  <!-- Fond -->
+  <g filter="url(#ombreIcone)"><rect x="100" y="100" width="824" height="824" rx="186" fill="url(#fond)"/></g>
+  <g clip-path="url(#carre)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#lueur)"/>
+    <circle cx="800" cy="840" r="170" fill="#ff4d6a" opacity="0.28" filter="url(#flou)"/>
+    <circle cx="200" cy="820" r="160" fill="#6ec8ff" opacity="0.25" filter="url(#flou)"/>
   </g>
-  <!-- Celle de droite lève la main : la participation, en rouge Marianne -->
-  <path d="M826 842 L866 652" stroke="#ffffff" stroke-width="40" stroke-linecap="round"/>
-  <circle cx="872" cy="616" r="40" fill="#e1000f" stroke="#ffffff" stroke-width="14"/>
+  <rect x="101.5" y="101.5" width="821" height="821" rx="185" fill="none" stroke="url(#bordFond)" stroke-width="3"/>
+
+  <!-- Écran de verre -->
+  <g filter="url(#ombre)"><rect x="214" y="186" width="596" height="380" rx="56" fill="url(#verre)"/></g>
+  <rect x="215.5" y="187.5" width="593" height="377" rx="54.5" fill="none" stroke="url(#lisere)" stroke-width="3"/>
+  <path d="M270 188 H754 A56 56 0 0 1 806 228 H218 A56 56 0 0 1 270 188 Z" fill="url(#reflet)" opacity="0.7"/>
+  <!-- barres du sondage -->
+  <g filter="url(#ombreDouce)">
+    <rect x="300" y="400" width="88" height="104" rx="20" fill="url(#b1)"/>
+    <rect x="468" y="320" width="88" height="184" rx="20" fill="url(#b2)"/>
+    <rect x="636" y="236" width="88" height="268" rx="20" fill="url(#b3)"/>
+  </g>
+  <g fill="#ffffff" opacity="0.45">
+    <rect x="312" y="410" width="64" height="14" rx="7"/><rect x="480" y="330" width="64" height="14" rx="7"/><rect x="648" y="246" width="64" height="14" rx="7"/>
+  </g>
+
+  <!-- La salle : trois silhouettes de verre -->
+  <g filter="url(#ombreDouce)" fill="url(#verrePublic)">
+    <circle cx="350" cy="680" r="54"/>
+    <path d="M250 840 a100 96 0 0 1 200 0 Z"/>
+    <circle cx="512" cy="664" r="60"/>
+    <path d="M402 840 a110 104 0 0 1 220 0 Z"/>
+    <circle cx="674" cy="680" r="54"/>
+    <path d="M574 840 a100 96 0 0 1 200 0 Z"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="3">
+    <path d="M318 650 a40 40 0 0 1 50 -14"/><path d="M478 632 a46 46 0 0 1 58 -16"/><path d="M642 650 a40 40 0 0 1 50 -14"/>
+  </g>
+  <!-- le carton de vote levé -->
+  <g filter="url(#ombreDouce)">
+    <path d="M742 806 L784 626" stroke="url(#verrePublic)" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="790" cy="604" r="44" fill="url(#pastille)"/>
+  </g>
+  <circle cx="790" cy="604" r="42.5" fill="none" stroke="#ffffff" stroke-opacity="0.95" stroke-width="7"/>
+  <path d="M768 590 a26 26 0 0 1 22 -14" fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
 </svg>
