@@ -1,5 +1,16 @@
 [
   {
+    "version": "1.5.0",
+    "publieLe": "2026-10-23T18:14:16.509Z",
+    "notes": [
+      "Convertir des diapositives en questions : clic droit dans le plan, cartes pré-remplies à vérifier (Ajouter au plan, Ignorer, Annuler)",
+      "Lecture du texte des diapositives-images",
+      "Correcteur orthographique et grammatical intégré, sans réseau (LanguageTool)",
+      "Parcours d'accueil à l'ouverture du premier diaporama",
+      "Nouvelle icône ; le bouton Prompt IA est retiré"
+    ]
+  },
+  {
     "version": "1.3.5",
     "publieLe": "2026-10-08T14:52:42.792Z",
     "notes": [
