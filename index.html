@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Applications de la mission numérique 94</title>
-<meta name="description" content="Télécharger la Moulinette EvNat 094 pour Mac, Windows et Linux : installation, guide, nouveautés.">
-<link rel="icon" href="charte/logo-moulinette.png">
+<meta name="description" content="Télécharger la Visionneuse et la Moulinette EvNat 094 pour Mac, Windows et Linux : installation, guides, nouveautés.">
+<link rel="icon" href="charte/logo-visionneuse.png">
 <script>
   // Thème appliqué avant l'affichage : choix mémorisé, sinon celui du système.
   try { const t = localStorage.getItem('cpdnum.theme'); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
@@ -164,11 +164,30 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
 
 <main class="conteneur">
   <section class="bandeau">
-    <h1>Télécharger la Moulinette EvNat 094</h1>
-    <p>Un outil pour le pilotage des circonscriptions du Val-de-Marne, pour Mac, Windows et Linux. Gratuit, libre, sans compte à créer, et mis à jour automatiquement.</p>
+    <h1>Télécharger les applications</h1>
+    <p>Deux outils pour les formations et le pilotage des circonscriptions du Val-de-Marne, pour Mac, Windows et Linux. Gratuits, sans compte à créer, et mis à jour automatiquement.</p>
   </section>
 
   <div class="applis">
+    <article class="appli" id="visionneuse" data-appli="visionneuse">
+      <div class="appli-tete">
+        <img src="charte/logo-visionneuse.png" alt="">
+        <div><h2>Visionneuse 094</h2><p class="version" data-champ="version">Version en cours de lecture…</p></div>
+      </div>
+      <p>Projetez votre diaporama et faites participer la salle depuis les téléphones : questionnaires, nuages de mots, diapositives à consulter. La Visionneuse repère les questions déjà écrites dans votre diaporama et vous propose d'en faire des questionnaires. Les participants scannent un QR code ; leurs réponses restent anonymes.</p>
+      <div class="boutons">
+        <a class="bouton principal" data-lien="windows" aria-disabled="true" href="#">Télécharger pour Windows <span class="taille" data-taille="windows"></span></a>
+        <a class="bouton" data-lien="mac" aria-disabled="true" href="#">Télécharger pour Mac (Apple Silicon) <span class="taille" data-taille="mac"></span></a>
+        <a class="bouton" data-lien="linux" aria-disabled="true" href="#">Télécharger pour Linux (AppImage) <span class="taille" data-taille="linux"></span></a>
+      </div>
+      <div class="liens-guide">
+        <a href="guides/visionneuse.html">Lire le guide</a>
+        <a href="guides/visionneuse.pdf">Guide PDF</a>
+        <a href="#galerie-visionneuse">Voir les captures</a>
+      </div>
+      <div class="nouveautes" data-champ="notes" hidden></div>
+    </article>
+
     <article class="appli" id="moulinette" data-appli="moulinette">
       <div class="appli-tete">
         <img src="charte/logo-moulinette.png" alt="">
@@ -189,6 +208,19 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
       <div class="nouveautes" data-champ="notes" hidden></div>
     </article>
   </div>
+
+  <section class="bloc" id="galerie-visionneuse">
+    <h2>La Visionneuse en images</h2>
+    <p class="chapeau">Cliquez sur une capture pour l'agrandir.</p>
+    <div class="galerie">
+      <figure><a href="images/visionneuse/ecran-general.jpg"><img loading="lazy" src="images/visionneuse/ecran-general.jpg" alt="L'écran de la Visionneuse"></a><figcaption>L'écran du présentateur : le plan, l'aperçu et vos commentaires, la vue présentateur.</figcaption></figure>
+      <figure><a href="images/visionneuse/conversion.jpg"><img loading="lazy" src="images/visionneuse/conversion.jpg" alt="Conversion de diapositives en questions"></a><figcaption>Vos diapositives deviennent des questions : chaque carte est pré-remplie, vous vérifiez, puis « Ajouter au plan ».</figcaption></figure>
+      <figure><a href="images/visionneuse/sondage-en-cours.jpg"><img loading="lazy" src="images/visionneuse/sondage-en-cours.jpg" alt="Un sondage en cours"></a><figcaption>Un sondage en cours : les pourcentages en direct ne sont visibles que de vous.</figcaption></figure>
+      <figure class="telephone"><a href="images/visionneuse/telephone.jpg"><img loading="lazy" src="images/visionneuse/telephone.jpg" alt="La page des participants sur téléphone"></a><figcaption>Sur le téléphone des participants : on scanne le QR code et on rejoint la séance.</figcaption></figure>
+      <figure><a href="images/visionneuse/accueil.jpg"><img loading="lazy" src="images/visionneuse/accueil.jpg" alt="Le parcours d'accueil"></a><figcaption>Le parcours d'accueil prépare la séance pas à pas dès l'ouverture du diaporama.</figcaption></figure>
+      <figure><a href="images/visionneuse/ecran-sombre.jpg"><img loading="lazy" src="images/visionneuse/ecran-sombre.jpg" alt="Le mode sombre"></a><figcaption>Le mode sombre, pour les salles obscures.</figcaption></figure>
+    </div>
+  </section>
 
   <section class="bloc" id="galerie-moulinette">
     <h2>La Moulinette EvNat 094 en images</h2>
@@ -221,11 +253,11 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
           <li>Ouvrez le fichier <code>.dmg</code> téléchargé.</li>
           <li>Glissez l'application dans le dossier <strong>Applications</strong>.</li>
           <li>Au premier lancement, faites <strong>clic droit → Ouvrir</strong>, puis confirmez : l'application n'est pas signée par Apple.</li>
-          <li>Si macOS répond « endommagé » ou « non compatible », ouvrez le Terminal et tapez : <code>xattr -dr com.apple.quarantine "/Applications/Moulinette EvNat 094.app"</code>, puis relancez. Mac Intel : prenez le fichier « Mac (Intel) ». macOS 11 (Big Sur) ou plus récent.</li>
+          <li>Si macOS répond « endommagé » ou « non compatible », ouvrez le Terminal et tapez : <code>xattr -dr com.apple.quarantine "/Applications/Visionneuse.app"</code> (ou <code>"/Applications/Moulinette EvNat 094.app"</code>), puis relancez. Mac Intel : la Moulinette seulement, fichier « Mac (Intel) ». macOS 11 (Big Sur) ou plus récent.</li>
         </ol>
       </div>
       <div class="etape">
-        <h3>Sur Linux (Moulinette)</h3>
+        <h3>Sur Linux</h3>
         <ol>
           <li>Téléchargez le fichier <code>.AppImage</code> et rendez-le exécutable : clic droit → Propriétés → « Autoriser l'exécution », ou <code>chmod +x</code>.</li>
           <li>Double-cliquez dessus : aucune installation, l'application s'ouvre.</li>
@@ -241,7 +273,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
         </ol>
       </div>
     </div>
-    <p class="remarque">Vous avez encore la <strong>Moulinette 0.0.1</strong> ? Cette version n'a pas la mise à jour automatique : installez une fois la version proposée ici par-dessus. Vos séances et vos projets sont conservés.</p>
+    <p class="remarque">Vous avez encore la <strong>Visionneuse 1.1.9</strong> ou la <strong>Moulinette 0.0.1</strong> ? Ces versions n'ont pas la mise à jour automatique : installez une fois la version proposée ici par-dessus. Vos séances et vos projets sont conservés.</p>
   </section>
 </main>
 
@@ -249,7 +281,7 @@ dialog.loupe p { color: #fff; text-align: center; margin: 10px 0 0; }
   <div class="conteneur">
     <img class="logo-pied logo-mission-clair" src="charte/logo-mission-numerique-94-clair.png" alt="Mission numérique 94"><img class="logo-pied logo-mission-sombre" src="charte/logo-mission-numerique-94-sombre.png" alt="Mission numérique 94">
     <p>Mission numérique 94.<br>
-      Application libre (licence GPL v3). Vos fichiers et vos projets restent sur votre ordinateur : la partie 8 du guide détaille les données personnelles.</p>
+      La Moulinette est une application libre (licence GPL v3) ; vos fichiers et vos projets restent sur votre ordinateur. Avec la Visionneuse, les réponses des participants sont anonymes et effacées avec la séance. Chaque guide détaille les données personnelles.</p>
   </div>
 </footer>
 
