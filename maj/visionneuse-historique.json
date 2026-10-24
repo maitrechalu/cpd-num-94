@@ -1,5 +1,17 @@
 [
   {
+    "version": "1.5.1",
+    "publieLe": "2026-10-24T13:57:07.372Z",
+    "notes": [
+      "Nuages de mots : une liste de mots bannis d'office (grossièretés), modifiable dans les Réglages ; un mot s'autorise d'un clic",
+      "Session restée ouverte après un plantage : reprise ou clôture proposée au lancement ; les sessions abandonnées se ferment d'elles-mêmes, et les participants voient quand la régie ne répond plus",
+      "Vidéos et sons : lecture dans la régie quand la projection est fermée ; cadre vidéo recalé sur l'aperçu",
+      "Plan allégé : l'aperçu seul pour les diapositives, une vignette et une icône pour les questions et nuages, des repères vidéo / son",
+      "Réponses réordonnables par glisser-déposer ; pause à placer sur un ruban du plan et clic droit QCM ↔ nuage dans le parcours d'accueil",
+      "L'aperçu central d'une question n'est plus tronqué"
+    ]
+  },
+  {
     "version": "1.5.0",
     "publieLe": "2026-10-23T18:14:16.509Z",
     "notes": [
