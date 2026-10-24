@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.5.2",
+    "publieLe": "2026-10-24T14:22:35.462Z",
+    "notes": [
+      "Une question ou un nuage lancé avant « Diffuser la session » (ou avant une reprise) part désormais aussitôt vers les participants, qui ne restent plus « en attente »",
+      "Aperçu du nuage : les mots ne sont plus coupés quand la bande des mots bannis apparaît",
+      "Et tout ce qu'apportait la 1.5.1 : mots bannis d'office, sessions abandonnées closes d'elles-mêmes, lecture des médias dans la régie, plan allégé, réponses réordonnables"
+    ]
+  },
+  {
     "version": "1.5.1",
     "publieLe": "2026-10-24T13:57:07.372Z",
     "notes": [
