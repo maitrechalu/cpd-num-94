@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.8.0",
+    "publieLe": "2026-11-02T18:32:31.136Z",
+    "notes": [
+      "Export pour l’IA refondu : une fiche par école (IPS, rang, réussite attendue) et des classements déjà calculés ; l’Assistant IA répond aux questions qui croisent les données",
+      "Avant chaque export : choisir les données transmises (anonymiser les écoles, retirer l’IPS…), avec un exemple",
+      "Un PDF par sujet : dossier par école avec guide et fichier pour l’Assistant IA",
+      "Zoom réel sur les graphiques, barres horizontales ou verticales, vue par cycle, REP+ distingué",
+      "Nuage IPS lisible (étiquettes, épingles), tendance et simulation à IPS égal ; onglet Synthèses (graphiques du classeur départemental)",
+      "Demander une amélioration : demandes anonymes, votes et signalements"
+    ]
+  },
+  {
     "version": "0.7.4",
     "publieLe": "2026-11-02T09:15:20.106Z",
     "notes": [
