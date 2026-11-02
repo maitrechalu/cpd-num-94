@@ -1,5 +1,14 @@
 [
   {
+    "version": "0.7.4",
+    "publieLe": "2026-11-02T09:15:20.106Z",
+    "notes": [
+      "Exports REPERE 2024-2025 reconnus (années N-2 et antérieures), noms d'écoles repris de l'annuaire",
+      "Imprimer : la liste des sujets garde sa position quand on coche une école",
+      "Écoles de même nom dans deux villes : nom complété de la commune (ou de l'UAI, au choix dans Écoles)"
+    ]
+  },
+  {
     "version": "0.7.3",
     "publieLe": "2026-10-13T13:48:14.093Z",
     "notes": [
