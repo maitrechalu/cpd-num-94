@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.8.1",
+    "publieLe": "2026-11-03T12:26:25.256Z",
+    "notes": [
+      "Écoles : réseaux et collèges à vérifier puis confirmer avant d’afficher les résultats ; enregistrement automatique ensuite",
+      "Annuaire mis à jour en sourdine : les différences deviennent des suggestions (appliquer, ignorer, non jamais), pastille sur Écoles",
+      "Données anonymisées : table de correspondance à part (PDF, à ne pas transmettre)",
+      "Ordre des barres empilées au choix ; colonne REP de largeur fixe"
+    ]
+  },
+  {
     "version": "0.8.0",
     "publieLe": "2026-11-02T18:32:31.136Z",
     "notes": [
