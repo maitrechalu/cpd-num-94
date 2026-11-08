@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.8.2",
+    "publieLe": "2026-11-08T11:09:46.438Z",
+    "notes": [
+      "Albert, l’IA de l’État, dans l’Aide (avec votre clé) : réponses sur vos données, boutons « Vérifier dans la Moulinette » qui ouvrent le bon graphique, contrôle automatique des chiffres cités",
+      "Pièces jointes dans l’Aide (textes, tableurs, Word, PDF, images) ; panneau déplaçable et redimensionnable ; bouton copier",
+      "Réseaux REP / REP+ tirés de la liste départementale, par code UAI (noms lus dans l’annuaire)",
+      "Dossier pour l’IA complet : compétences, exercices, seuils, effectifs, écarts significatifs, classes, participation ; consignes pour signaler les données absentes",
+      "Tri des colonnes dans Écoles ; glisser-déposer des fichiers réparé ; contrôles de cohérence avec REPERE"
+    ]
+  },
+  {
     "version": "0.8.1",
     "publieLe": "2026-11-03T12:26:25.256Z",
     "notes": [
