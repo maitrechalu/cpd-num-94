@@ -1,5 +1,14 @@
 [
   {
+    "version": "0.8.3",
+    "publieLe": "2026-11-08T11:39:20.219Z",
+    "notes": [
+      "L’Aide devient le « Chat IA »",
+      "Quotas d’Albert : clic sur le bouton violet pour voir les questions encore possibles aujourd’hui, les limites par minute et par jour ; alertes au-dessus de la saisie avant d’atteindre la limite, avec l’heure de remise à zéro",
+      "Sources des réponses d’Albert toujours cliquables (liens écrits de travers reconnus)"
+    ]
+  },
+  {
     "version": "0.8.2",
     "publieLe": "2026-11-08T11:09:46.438Z",
     "notes": [
