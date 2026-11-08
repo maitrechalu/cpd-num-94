@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.5.3",
+    "publieLe": "2026-11-08T10:39:45.504Z",
+    "notes": [
+      "Diaporamas PowerPoint, Keynote et LibreOffice : plus besoin d'installer LibreOffice soi-même ; la Visionneuse propose de télécharger le sien au premier besoin (une seule fois)",
+      "Un LibreOffice ancien ou en panne sur l'ordinateur ne bloque plus l'ouverture d'un diaporama",
+      "Vidéos : agrandies à tout l'écran à leur lancement, bouton Réduire / Agrandir (ou double-clic)",
+      "Questions préparées mais pas ajoutées au plan : la Visionneuse le rappelle avant de continuer"
+    ]
+  },
+  {
     "version": "1.5.2",
     "publieLe": "2026-10-24T14:22:35.462Z",
     "notes": [
