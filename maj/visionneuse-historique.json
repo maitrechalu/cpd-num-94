@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.5.4",
+    "publieLe": "2026-11-11T16:19:56.421Z",
+    "notes": [
+      "Lien dans une diapositive : la page web s'ouvre en plein écran dans la Visionneuse, comme une vidéo",
+      "Masquer la page pour revenir à la diapositive sans la perdre, puis la réafficher ou la fermer, depuis la projection ou la régie",
+      "Régie : les liens de la diapositive en cours sont listés sous l'aperçu, prêts à ouvrir"
+    ]
+  },
+  {
     "version": "1.5.3",
     "publieLe": "2026-11-08T10:39:45.504Z",
     "notes": [
