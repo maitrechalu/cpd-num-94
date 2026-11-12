@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.5.5",
+    "publieLe": "2026-11-12T12:37:44.269Z",
+    "notes": [
+      "Liens de la régie : bouton « Ouvrir » à la place de l’icône",
+      "La page web s’ouvre en plein écran, sans barre ni adresse",
+      "Barre de la page au contact du haut de l’écran : Plein écran / Réduire, Masquer, Fermer",
+      "Réduire : la page passe dans une fenêtre au-dessus de la diapositive"
+    ]
+  },
+  {
     "version": "1.5.4",
     "publieLe": "2026-11-11T16:19:56.421Z",
     "notes": [
