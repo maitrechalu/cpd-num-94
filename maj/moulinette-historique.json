@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.8.4",
+    "publieLe": "2026-11-18T20:46:04.394Z",
+    "notes": [
+      "Suivi de cohorte : rapprochement automatique des compétences refait (même intitulé, puis même notion, puis notion voisine) ; à l’ouverture d’un ancien projet, les changements proposés se valident un par un",
+      "Exports REPERE de 2023 lus (deux groupes seulement, sans nom d’école) ; dépôt de plusieurs années d’un coup, année reconnue dans chaque fichier, fichier déposé sur la mauvaise année signalé",
+      "Résultats : jusqu’à cinq entités comparées (petit « + »), ordre des compétences (du fichier, moins ou mieux réussies d’abord), trait plein ou pointillé à la place des triangles, triangles retournés quand l’ordre est inversé, PDF des camemberts",
+      "« Circonscription, écoles retenues » proposée quand des écoles retirées déplacent le total REPERE ; Écoles : réglage du privé expliqué, boutons Toutes / Retenues / Exclues",
+      "Chat IA : « Copier » garde la mise en forme, zoom par Ctrl ou Cmd + molette ; demandes d’amélioration : capture collée ou déposée, vignettes ; sommaire du guide plus précis"
+    ]
+  },
+  {
     "version": "0.8.3",
     "publieLe": "2026-11-08T11:39:20.219Z",
     "notes": [
