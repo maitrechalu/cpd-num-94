@@ -1,5 +1,14 @@
 [
   {
+    "version": "0.8.5",
+    "publieLe": "2026-11-19T09:03:24.552Z",
+    "notes": [
+      "Export REPERE de 2023 : effectif corrigé pour les compétences sans élève à besoins ni fragile (présents à la séquence, sinon école moins les autres classes, sinon l’autre onglet du niveau) ; une classe où tous réussissent ne disparaît plus",
+      "Ordre des compétences : réglage du projet, repris dans Statistiques et dans les PDF de l’écran Imprimer",
+      "PDF : graphiques des dossiers dessinés en traits et en texte (nets à toute échelle, fichiers plus légers) ; graphiques des PDF rapides en haute définition"
+    ]
+  },
+  {
     "version": "0.8.4",
     "publieLe": "2026-11-18T20:46:04.394Z",
     "notes": [
