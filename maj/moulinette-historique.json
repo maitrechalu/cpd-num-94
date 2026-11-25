@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.8.6",
+    "publieLe": "2026-11-25T15:11:25.357Z",
+    "notes": [
+      "Suivi de cohorte : deux compétences regroupées en une seule l’année suivante (« synonymes » et « mots de la même famille » au CM1, un score global au CM2) sont suivies ensemble, par leur moyenne ; les projets existants se voient proposer le changement",
+      "CP : « Connaître le nom des lettres » et « Connaître le son des lettres » (2026) sont comparées aux bons exercices des années précédentes, qui avaient seulement changé de nom",
+      "Tableau de cohorte : marque « seuil ↑ » ou « seuil ↓ » quand le seuil du groupe satisfaisant change d’un niveau à l’autre, avec les deux seuils en infobulle",
+      "Chat IA : jauge d’Albert (part de la limite du jour utilisée, heure de réinitialisation) ; le point du bouton Albert passe au jaune puis au rouge ; limite du jour atteinte correctement reconnue"
+    ]
+  },
+  {
     "version": "0.8.5",
     "publieLe": "2026-11-19T09:03:24.552Z",
     "notes": [
