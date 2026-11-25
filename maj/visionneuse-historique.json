@@ -1,5 +1,23 @@
 [
   {
+    "version": "1.6.1",
+    "publieLe": "2026-11-25T09:35:52.257Z",
+    "notes": [
+      "Tableau blanc partagé : formes, stylet, post-it, texte, images ; la salle y écrit depuis les téléphones",
+      "Boutons Question, Nuage, Tableau, Application, Site et Document pour composer le plan",
+      "Application, document (PDF, tableur, vidéo…) ou site web montrés sur l'écran de la salle sans quitter la projection",
+      "Loupe : agrandir une zone de la diapositive pour la salle",
+      "Enregistrement automatique de la séance, avec copie de secours",
+      "Chronomètre et minuteur affichables sur la projection",
+      "Page web : onglets, toujours en mode clair, message clair sans Internet ; elle se ferme en passant à la suite",
+      "Sondage ou nuage lancé sans diffusion : la session s'ouvre d'office",
+      "Réponses et nuages à l'épreuve des coupures de réseau",
+      "Conversion des diapositives en questions : carte à remplir à la main si la lecture échoue",
+      "GIF animés lus dans la projection",
+      "Mises à jour : version toujours visible, « Installer et relancer » plus sûr"
+    ]
+  },
+  {
     "version": "1.5.5",
     "publieLe": "2026-11-12T12:37:44.269Z",
     "notes": [
